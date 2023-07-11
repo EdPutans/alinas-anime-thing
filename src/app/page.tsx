@@ -16,7 +16,7 @@ export default function Home() {
         var parser = new DOMParser();
         var doc = parser.parseFromString(r, "text/html");
         const item = doc.querySelector(".c-new-tag");
-        console.log(item);
+        console.log(item, doc);
       });
   }, []);
 
